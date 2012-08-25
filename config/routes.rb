@@ -1,4 +1,10 @@
 Idevlove::Application.routes.draw do
+  
+
+  mount RailsAdmin::Engine => '/app_admin', :as => 'rails_admin'
+
+  devise_for :admins
+
   get "top/index"
 
   # The priority is based upon order of creation:
