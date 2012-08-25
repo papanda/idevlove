@@ -4,7 +4,7 @@
 
     <div data-role="content">
       <% if current_user %>
-        <%= current_user.name %> : <%=link_to "Logout", logout_path, :rel => "external" %>
+        <%= current_user.screen_name %> : <%=link_to "Logout", logout_path, :rel => "external" %>
         <br/>
 
         <% if current_user.provider == "twitter" %>
