@@ -1,9 +1,9 @@
 Idevlove::Application.routes.draw do
-  
 
   mount RailsAdmin::Engine => '/app_admin', :as => 'rails_admin'
-
   devise_for :admins
+
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
